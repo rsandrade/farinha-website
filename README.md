@@ -1,2 +1,2 @@
-# farinha-website
+# Farinha
 Website do Farinha
