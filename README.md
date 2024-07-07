@@ -1,2 +1,0 @@
-# Farinha
-Website do Farinha
