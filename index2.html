@@ -17,7 +17,7 @@
     <meta name="twitter:image" content="https://farinha.yndexa.com/farinha.png">
     <meta name="twitter:url" content="https://farinha.yndexa.com">
 
-    <!-- Link para o Bulma CSS -->
+    <!-- Link para o Bulma CSS atualizado -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
 
     <style>
@@ -32,12 +32,15 @@
 
         /* Classe personalizada para limitar a largura da imagem */
         .featured-image {
-            max-width: 600px;
-            width: 100%;
+            max-width: 100%;
             height: auto;
             border-radius: 8px;
-            display: block;
-            margin: 0 auto;
+        }
+
+        /* Centralizar a figura da imagem */
+        .image-container {
+            display: flex;
+            justify-content: center;
         }
     </style>
 </head>
@@ -45,9 +48,11 @@
     <section class="section">
         <div class="container">
             <div class="box has-text-centered">
-                <figure class="image">
-                    <img src="./padaria.jpg" alt="Imagem em destaque" class="featured-image">
-                </figure>
+                <div class="image-container">
+                    <figure class="image">
+                        <img src="./padaria.jpg" alt="Imagem em destaque" class="featured-image">
+                    </figure>
+                </div>
                 <h1 class="title is-2">Farinha</h1>
                 <p class="subtitle">Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes</p>
                 <p>Por favor, <a href="https://docs.google.com/forms/d/e/1FAIpQLScBOeM_lz7AG04jjsPXiDkq3xtXkNzAr8bsTP2ohEm_szlHCQ/viewform" target="_blank">cadastre seu email</a> para ser avisado quando nosso site estiver no ar.</p>
