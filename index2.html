@@ -30,21 +30,18 @@
             background-color: #FAF3DD; /* Amarelo Pastel */
         }
 
-        .box {
+        .hero {
             background-color: #FFEBE5; /* Rosa Pastel */
             color: #6B705C; /* Texto primário - Cinza Escuro */
         }
 
-        .title, .subtitle {
-            color: #6B705C; /* Texto primário - Cinza Escuro */
+        .hero-body {
+            padding: 3rem 1.5rem;
         }
 
-        a {
-            color: #83C5BE; /* Verde Pastel */
-        }
-
-        a:hover {
-            color: #006D77; /* Verde Escuro */
+        .content-section {
+            background-color: #FFFFFF; /* Branco */
+            padding: 3rem 1.5rem;
         }
 
         .footer {
@@ -61,24 +58,48 @@
         .image-container {
             display: flex;
             justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .supporter-logo {
+            margin: 1rem;
+        }
+
+        a {
+            color: #83C5BE; /* Verde Pastel */
+        }
+
+        a:hover {
+            color: #006D77; /* Verde Escuro */
         }
     </style>
 </head>
 <body>
-    <section class="section">
-        <div class="container">
-            <div class="box has-text-centered">
+    <!-- Cabeçalho -->
+    <section class="hero is-fullheight-with-navbar">
+        <div class="hero-body">
+            <div class="container has-text-centered">
                 <div class="image-container">
                     <figure class="image">
                         <img src="./padaria.jpg" alt="Imagem em destaque" class="featured-image">
                     </figure>
                 </div>
-                <h1 class="title is-2">Farinha</h1>
-                <p class="subtitle">Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes</p>
+                <h1 class="title is-1">Farinha</h1>
+                <h2 class="subtitle is-4">Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Informações -->
+    <section class="section content-section">
+        <div class="container">
+            <div class="content has-text-centered">
                 <p>Por favor, <a href="https://docs.google.com/forms/d/e/1FAIpQLScBOeM_lz7AG04jjsPXiDkq3xtXkNzAr8bsTP2ohEm_szlHCQ/viewform" target="_blank">cadastre seu email</a> para ser avisado quando nosso site estiver no ar.</p>
             </div>
         </div>
     </section>
+
+    <!-- Rodapé -->
     <footer class="footer">
         <div class="content has-text-centered">
             <p class="title is-5">Desenvolvimento</p>
