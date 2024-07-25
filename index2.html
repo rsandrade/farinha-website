@@ -15,107 +15,55 @@
     <meta name="twitter:title" content="Farinha">
     <meta name="twitter:description" content="Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes">
     <meta name="twitter:image" content="https://farinha.yndexa.com/farinha.png">
-    <meta name="twitter:url" content="https://farinha.yndexa.com">
-
-    <!-- Link para o Bulma CSS atualizado -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
-
+    <meta name="twitter:url" content="https://farinha.yndexa.com"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <style>
-        /* Estilo adicional para personalização */
-        body, html {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #f7f9fc; /* Azul Claro */
-        }
-
-        .hero {
-            background-color: #ffffff; /* Branco */
-            color: #2c3e50; /* Texto primário - Azul Escuro */
-        }
-
-        .hero-body {
-            padding: 3rem 1.5rem;
-        }
-
-        .content-section {
-            background-color: #ffffff; /* Branco */
-            padding: 3rem 1.5rem;
-        }
-
-        .footer {
-            background-color: #ecf0f1; /* Cinza Claro */
-            color: #2c3e50; /* Texto primário - Azul Escuro */
-        }
-
+        /* Estilos personalizados */
         .featured-image {
-            max-width: 100%;
+            width: 100%;
+            max-width: 600px;
             height: auto;
             border-radius: 8px;
+            margin-bottom: 20px;
         }
 
-        .image-container {
-            display: flex;
+        .supporters-list {
             justify-content: center;
-            margin-bottom: 2rem;
+            gap: 20px;
         }
 
         .supporter-logo {
-            margin: 1rem;
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
         }
 
-        a {
-            color: #2980b9; /* Azul */
+        .main-container {
+            margin-top: 40px;
         }
 
-        a:hover {
-            color: #1c5980; /* Azul Escuro */
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #dbdbdb;
         }
     </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
-    <section class="hero is-fullheight-with-navbar">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-                <div class="image-container">
-                    <figure class="image">
-                        <img src="./padaria.jpg" alt="Imagem em destaque" class="featured-image">
-                    </figure>
-                </div>
-                <h1 class="title is-1">Farinha</h1>
-                <h2 class="subtitle is-4">Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes</h2>
-            </div>
+    <section class="section">
+        <div class="container has-text-centered">
+            <img src="./padaria.jpg" alt="Imagem em destaque" class="featured-image">
+            <h1 class="title is-2">Farinha</h1>
+            <p class="subtitle is-4">Software livre de integração, disponibilização e acesso online de bases de dados e representantes digitais (digitalizados) de arquivos permanentes.</p>
+            <p>Por favor, <a href="https://docs.google.com/forms/d/e/1FAIpQLScBOeM_lz7AG04jjsPXiDkq3xtXkNzAr8bsTP2ohEm_szlHCQ/viewform" target="_blank">cadastre seu email</a> para ser avisado quando nosso site estiver no ar.</p>
         </div>
     </section>
-
-    <!-- Seção de Informações -->
-    <section class="section content-section">
-        <div class="container">
-            <div class="content has-text-centered">
-                <p>Por favor, <a href="https://docs.google.com/forms/d/e/1FAIpQLScBOeM_lz7AG04jjsPXiDkq3xtXkNzAr8bsTP2ohEm_szlHCQ/viewform" target="_blank">cadastre seu email</a> para ser avisado quando nosso site estiver no ar.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
     <footer class="footer">
         <div class="content has-text-centered">
-            <p class="title is-5">Desenvolvimento</p>
-            <div class="columns is-mobile is-centered">
-                <div class="column is-narrow">
-                    <a href="https://feudo.org" target="_blank">
-                        <figure class="image is-128x128">
-                            <img src="./feudo-logo-100x100.png" alt="Feudo.org" class="supporter-logo">
-                        </figure>
-                    </a>
-                </div>
-                <div class="column is-narrow">
-                    <figure class="image is-128x128">
-                        <img src="./yndexa-logo-100x100.png" alt="Yndexa" class="supporter-logo">
-                    </figure>
-                </div>
+            <p class="supporters-title title is-4">Desenvolvimento</p>
+            <div class="supporters-list">
+                <a href="https://feudo.org" target="_blank"><img src="./feudo-logo-100x100.png" alt="Feudo.org" class="supporter-logo"></a>
+                <a href="https://yndexa.com" target="_blank"><img src="./yndexa-logo-100x100.png" alt="Yndexa" class="supporter-logo"></a>
             </div>
         </div>
     </footer>
